@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EstudiantesPrincipal</class>
+ <widget class="QMainWindow" name="EstudiantesPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>765</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>640</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>35287</width>
+    <height>283225</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Principal</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/images/colegio.png</normaloff>:/images/colegio.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="wdg_principal">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="lay_ver_principal">
+      <item>
+       <widget class="QMdiArea" name="mdiArea"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="mbr_barra_estudiantes">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>765</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="mnu_archivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="mni_salir"/>
+    <addaction name="mni_cargar"/>
+    <addaction name="mni_guardar"/>
+   </widget>
+   <widget class="QMenu" name="mnu_estudiantes">
+    <property name="title">
+     <string>Estudiantes</string>
+    </property>
+    <addaction name="mni_agregar_estudiante"/>
+    <addaction name="mni_remover_estudiante"/>
+    <addaction name="mni_buscar_estudiante"/>
+    <addaction name="mni_agregar_notas"/>
+   </widget>
+   <widget class="QMenu" name="mnu_reporte">
+    <property name="title">
+     <string>Reporte</string>
+    </property>
+    <addaction name="mni_top_5_estudiantes"/>
+    <addaction name="mni_listado_estudiantes"/>
+   </widget>
+   <widget class="QMenu" name="mnu_acerca_de">
+    <property name="title">
+     <string>Acerca de</string>
+    </property>
+    <addaction name="mni_hecho_por"/>
+    <addaction name="mni_version"/>
+   </widget>
+   <addaction name="mnu_archivo"/>
+   <addaction name="mnu_estudiantes"/>
+   <addaction name="mnu_reporte"/>
+   <addaction name="mnu_acerca_de"/>
+  </widget>
+  <widget class="QStatusBar" name="stt_principal"/>
+  <action name="mni_salir">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/salir.png</normaloff>:/images/salir.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="mni_agregar_estudiante">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/agregar.png</normaloff>:/images/agregar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregar estudiante</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="mni_remover_estudiante">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/basura.png</normaloff>:/images/basura.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remover estudiante</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="mni_buscar_estudiante">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/lupa.png</normaloff>:/images/lupa.png</iconset>
+   </property>
+   <property name="text">
+    <string>Buscar estudiante</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="mni_top_5_estudiantes">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/corona.png</normaloff>:/images/corona.png</iconset>
+   </property>
+   <property name="text">
+    <string>Top 5 mejores estudiantes</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+  </action>
+  <action name="mni_listado_estudiantes">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/lista.png</normaloff>:/images/lista.png</iconset>
+   </property>
+   <property name="text">
+    <string>Listado estudiantes</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="mni_hecho_por">
+   <property name="text">
+    <string>Hecho por...</string>
+   </property>
+  </action>
+  <action name="mni_version">
+   <property name="text">
+    <string>Versión</string>
+   </property>
+  </action>
+  <action name="mni_agregar_notas">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/notas.png</normaloff>:/images/notas.png</iconset>
+   </property>
+   <property name="text">
+    <string>Agregar notas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="mni_cargar">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/cargar.png</normaloff>:/images/cargar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cargar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="mni_guardar">
+   <property name="icon">
+    <iconset resource="../images/imagenes.qrc">
+     <normaloff>:/images/guardar.png</normaloff>:/images/guardar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

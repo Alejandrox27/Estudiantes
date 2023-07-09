@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="images">
+    <file>cargar.png</file>
+    <file>guardar.png</file>
+    <file>persona.png</file>
+    <file>mas.png</file>
+    <file>notas.png</file>
+    <file>corona.png</file>
+    <file>lista.png</file>
+    <file>lupa.png</file>
+    <file>basura.png</file>
+    <file>agregar.png</file>
+    <file>salir.png</file>
+    <file>colegio.png</file>
+  </qresource>
+</RCC>

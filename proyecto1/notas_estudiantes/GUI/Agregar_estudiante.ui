@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Agregar_estudiante</class>
+ <widget class="QWidget" name="Agregar_estudiante">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>321</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>321</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>321</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Agregar Estudiante</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="lbl_agregar_estudiante">
+       <property name="styleSheet">
+        <string notr="true">font: 35pt &quot;Gill Sans MT Condensed&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar estudiante</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="lay_frm_datos">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_codigo_estudiante">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>Inserte ID/codigo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbl_nombre_estudiante">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nombre: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txt_nombre_estudiante">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+padding-bottom: 5px;
+font: 10pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Inserte nombre</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_foto_diag">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Foto:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLabel" name="lbl_foto_agregar">
+         <property name="minimumSize">
+          <size>
+           <width>223</width>
+           <height>177</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>223</width>
+           <height>177</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border: 2px solid rgba(0, 0, 0, 255);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 30px;
+padding-left: 30px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../images/imagenes.qrc">:/images/mas.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_codigo_id">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID/Codigo: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLabel" name="lbl_mensaje">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLabel" name="lbl_mensaje_2">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar_estudiante">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btn_agregar_estudiante {
+	background-color: rgba(255,0,0,126);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_agregar_estudiante:hover {
+	background-color: rgba(255,155,155,226);
+	border-radius:5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_agregar_estudiante:pressed {
+	background-color: rgba(255,110,100,255);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Agregar</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

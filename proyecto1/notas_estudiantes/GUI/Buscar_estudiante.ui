@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Buscar_estudiante</class>
+ <widget class="QWidget" name="Buscar_estudiante">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>320</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Buscar estudiante</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/images/lupa.png</normaloff>:/images/lupa.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="lbl_buscar_estudiante">
+       <property name="styleSheet">
+        <string notr="true">font: 35pt &quot;Gill Sans MT Condensed&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Buscar estudiante</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="lay_frm_datos">
+       <property name="horizontalSpacing">
+        <number>50</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_codigo">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>ID/Codigo: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_codigo">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Inserte ID/codigo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btn_buscar_estudiante">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#btn_buscar_estudiante {
+	background-color: rgba(255,150,15,200);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_buscar_estudiante:hover {
+	background-color: rgba(255,209,15,200);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_buscar_estudiante:pressed {
+	background-color: rgba(139, 69, 19,255);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+         </property>
+         <property name="text">
+          <string>Buscar</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_nombre">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Nombre: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="txt_nombre">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lbl_notas">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Notas: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="txt_notas">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_puesto">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Puesto: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QSpinBox" name="spb_puesto">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lbl_promedio">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Promedio:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDoubleSpinBox" name="spb_promedio">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="maximum">
+          <double>5.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_foto_text">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;
+color: rgb(0, 0, 0);</string>
+         </property>
+         <property name="text">
+          <string>Foto: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLabel" name="lbl_foto">
+         <property name="minimumSize">
+          <size>
+           <width>178</width>
+           <height>180</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>178</width>
+           <height>180</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border: 2px solid ;
+
+padding-top: 3px;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../images/imagenes.qrc">:/images/persona.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

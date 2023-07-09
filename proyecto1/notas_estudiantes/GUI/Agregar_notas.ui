@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Agregar_notas</class>
+ <widget class="QWidget" name="Agregar_notas">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>217</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>217</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>320</width>
+    <height>217</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Agregar Notas</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/images/notas.png</normaloff>:/images/notas.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item alignment="Qt::AlignHCenter">
+      <widget class="QLabel" name="lbl_Agregar_Notas">
+       <property name="styleSheet">
+        <string notr="true">font: 35pt &quot;Gill Sans MT Condensed&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Agregar notas</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QFormLayout" name="lay_frm_datos">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_codigo">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>ID/codigo: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbl_Nota">
+         <property name="styleSheet">
+          <string notr="true">font: 11pt &quot;Gill Sans MT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Nota: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txt_codigo">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="placeholderText">
+          <string>Inserte ID/codigo</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDoubleSpinBox" name="spb_nota">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(0,0,0,0);
+border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 255);
+color: rgba(0,0,0,255);
+padding-bottom: 5px;</string>
+         </property>
+         <property name="maximum">
+          <double>5.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_agregar_nota">
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btn_agregar_nota {
+	background-color: rgba(145,12,115,116);
+	border-radius: 5px;
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_agregar_nota:hover {
+	background-color: rgba(175,12,175,116);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}
+
+QPushButton#btn_agregar_nota:pressed {
+	background-color: rgba(225,0,225,255);
+	border-radius: 5px;
+	
+	font: 15pt &quot;Gill Sans MT Condensed&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Agregar Nota</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

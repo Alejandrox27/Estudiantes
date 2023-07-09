@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Listado_estudiantes</class>
+ <widget class="QWidget" name="Listado_estudiantes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>589</width>
+    <height>257</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>589</width>
+    <height>257</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>589</width>
+    <height>257</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Listado estudiantes</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/imagenes.qrc">
+    <normaloff>:/images/lista.png</normaloff>:/images/lista.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget #Listado_estudiantes {
+background-color: qlineargradient(spread:pad, x1:0.763, y1:0.00568182, x2:0.761, y2:0.954545, stop:0.146893 rgba(255, 255, 255, 255), stop:0.80791 rgba(149, 0, 0, 255));
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="lay_ver_principal">
+     <item>
+      <widget class="QTableWidget" name="tbl_tabla_estudiantes">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <column>
+        <property name="text">
+         <string>ID/Codigo</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Puesto</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Promedio</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Foto</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../images/imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>
