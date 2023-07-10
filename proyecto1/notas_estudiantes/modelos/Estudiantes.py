@@ -1,6 +1,6 @@
 from PIL import Image
 import io
-from PyQt5.QtGui import QPixmap, QIcon
+from PyQt5.QtGui import QPixmap, QIcon, QImage
 from PyQt5.QtWidgets import QTableWidgetItem
 from PyQt5.QtCore import Qt
 
@@ -219,16 +219,14 @@ class Estudiantes():
         imagen_normal: QPixmap de la imagen.
         """
         imagen_io = io.BytesIO(imagen_binaria)
-
         imagen_pil = Image.open(imagen_io)
-        
-        if imagen_pil.mode == 'P' and 'transparency' in imagen_pil.info:
+
+        if imagen_pil.mode != 'RGBA':
             imagen_pil = imagen_pil.convert('RGBA')
 
-        imagen_pil.save('notas_estudiantes/images/imagen_temp.png', 'PNG')
+        imagen_qt = QImage(imagen_pil.tobytes(), imagen_pil.size[0], imagen_pil.size[1], QImage.Format_RGBA8888)
+        imagen_normal = QPixmap.fromImage(imagen_qt)
 
-        ruta_imagen = 'notas_estudiantes/images/imagen_temp.png' 
-        imagen_normal = QPixmap(ruta_imagen)
         return imagen_normal
             
     def cargar_lista_estudiantes(self, tabla):
